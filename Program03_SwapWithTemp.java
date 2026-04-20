@@ -12,7 +12,6 @@ public class Program03_SwapWithTemp {
 
         System.out.println("Before swap: a = " + a + ", b = " + b);
 
-        // use a third variable to hold one value temporarily
         int temp = a;
         a = b;
         b = temp;
