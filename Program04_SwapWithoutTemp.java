@@ -12,7 +12,6 @@ public class Program04_SwapWithoutTemp {
 
         System.out.println("Before swap: a = " + a + ", b = " + b);
 
-        // swap using math trick - no extra variable needed
         a = a + b;
         b = a - b;
         a = a - b;
