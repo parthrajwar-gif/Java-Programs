@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Program04_SwapWithoutTemp {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Before swap: a = " + a + ", b = " + b);
+
+        // swap using math trick - no extra variable needed
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swap: a = " + a + ", b = " + b);
+
+        sc.close();
+    }
+}
